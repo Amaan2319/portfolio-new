@@ -183,7 +183,7 @@
   <section class="hero container">
     <div class="row align-items-center text-center text-md-start">
       <div class="col-md-5 text-center mt-4 mt-md-0">
-        <img src="images/amaan-cartoon.png" alt="Profile" id="profileImage" class="profile-img">
+        <img src="images/amaan-cartoon.jpg" alt="Profile" id="profileImage" class="profile-img">
       </div>
       <div class="col-md-7">
         <h1>Hello, I'm <span style="color:#00c6ff">Remo</span></h1>
@@ -342,23 +342,7 @@ applications.</p>
       renderer.setSize(window.innerWidth, window.innerHeight);
     });
 
-    // Image toggle logic
-    const profileImg = document.getElementById("profileImage");
-    const cartoonImg = "images/amaan-cartoon.png";
-    const realImg = "images/amaan-real.png";
-    let showingCartoon = true;
-
-    profileImg.addEventListener("click", () => {
-      profileImg.src = showingCartoon ? realImg : cartoonImg;
-      showingCartoon = !showingCartoon;
-    });
-
-    profileImg.addEventListener("mouseenter", () => {
-      profileImg.src = realImg;
-    });
-    profileImg.addEventListener("mouseleave", () => {
-      profileImg.src = cartoonImg;
-    });
+    
   </script>
 </body>
 </html>
